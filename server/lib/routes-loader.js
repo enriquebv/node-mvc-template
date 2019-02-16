@@ -9,7 +9,7 @@ const controllersPath = path.resolve(__dirname, '..', 'controllers')
 const routesFile = fs.readFileSync(routesPath, 'utf8')
 const routes = yamlReader.safeLoad(routesFile)
 
-function createRoute(server, route) {
+function createRoute(app, route) {
   const controllerPath = path.join(controllersPath, route.controller)
   let controller = {}
 
@@ -22,14 +22,14 @@ function createRoute(server, route) {
 
   switch (route.method) {
     case 'get':
-      server.get(route.url, controller)
+      app.get(route.url, controller)
       break
     case 'post':
-      server.post(route.url, controller)
+      app.post(route.url, controller)
       break
   }
 
-  server.get('/', (req, res) => res.send('test'))
+  app.get('/', (req, res) => res.send('test'))
 }
 
-module.exports = server => routes.forEach(createRoute.bind(null, server))
+module.exports = app => routes.forEach(createRoute.bind(null, app))

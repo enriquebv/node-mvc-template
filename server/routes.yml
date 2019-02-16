@@ -1,4 +1,4 @@
-# Example route
+# Index route, managed by ./server/controllers/index.js
 - url: /
   method: get
-  controller: /controller.js
+  controller: /index.js
