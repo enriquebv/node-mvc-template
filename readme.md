@@ -6,9 +6,10 @@ Usa los siguientes módulos:
 
 ## Aun en desarrollo:
 En progreso:
-* Archivo de configuración yaml.
-* Motor de plantillas con [EJS](https://ejs.co/)
-* Webpack 4.
-* Modelos con [Sequelizejs](http://docs.sequelizejs.com/).
-* Socket (opcional por configuracion) con [WS](https://github.com/websockets/ws).
-* Socket (opcional por configuracion) con [Socket.io](https://socket.io/).
+- [x] Archivo de entorno `.env`.
+- [ ] Motor de plantillas con [EJS](https://ejs.co/)
+- [ ] Webpack 4.
+- [ ] Modelos con [Sequelizejs](http://docs.sequelizejs.com/).
+- [ ] Socket (opcional por configuracion) con [WS](https://github.com/websockets/ws).
+  - Cliente con [Sockette](https://github.com/lukeed/sockette).
+- [ ] Socket (opcional por configuracion) con [Socket.io](https://socket.io/).
