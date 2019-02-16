@@ -6,6 +6,7 @@ Los modulos mas importantes utilizados son:
 * [dotenv](https://github.com/motdotla/dotenv), para usar archivos de entorno `.env`.
 * [nodemon](https://github.com/remy/nodemon/), en desarollo, para reiniciar el sevidor cada vez que hay un cambio en el mismo.
 
+Funcionalidades:
 - [x] Archivos de entorno `.env`.
 - [ ] Motor de plantillas con [EJS](https://ejs.co/)
 - [ ] Webpack 4 (Vue + SCSS).
