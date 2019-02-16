@@ -6,12 +6,9 @@ Los modulos mas importantes utilizados son:
 * [dotenv](https://github.com/motdotla/dotenv), para usar archivos de entorno `.env`.
 * [nodemon](https://github.com/remy/nodemon/), en desarollo, para reiniciar el sevidor cada vez que hay un cambio en el mismo.
 
-## Aun en desarrollo:
-En progreso:
-- [x] Archivo de entorno `.env`.
+- [x] Archivos de entorno `.env`.
 - [ ] Motor de plantillas con [EJS](https://ejs.co/)
-- [ ] Motor de plantillas con [EJS](https://ejs.co/)
-- [ ] Webpack 4.
+- [ ] Webpack 4 (Vue + SCSS).
 - [ ] Modelos con [Sequelizejs](http://docs.sequelizejs.com/).
 - [ ] Socket (opcional por configuracion) con [WS](https://github.com/websockets/ws).
   - Cliente con [Sockette](https://github.com/lukeed/sockette).
