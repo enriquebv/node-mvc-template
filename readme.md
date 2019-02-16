@@ -40,9 +40,6 @@ Los **modulos** mas importantes utilizados son:
 ```js
 module.exports = (request, response) => {
   const content = 'node-mvc-template'
-
   response.status(200).send(content)
 }
 ```
-
-### Dentro de un controlador

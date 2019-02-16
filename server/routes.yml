@@ -1,4 +1,6 @@
 # Index route, managed by ./server/controllers/index.js
 - url: /
   method: get
-  controller: /index.js
+  controller: index.js
+  middlewares:
+    - each-visit.js
