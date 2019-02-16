@@ -9,7 +9,7 @@ Los **modulos** mas importantes utilizados son:
 **Funcionalidades**:
 - [x] Archivos de entorno `.env`.
 - [X] Soporte para rutas + controlador simple.
-- [ ] Soporte para middlewares.
+- [x] Soporte para middlewares.
 - [ ] Motor de plantillas con [EJS](https://ejs.co/)
 - [ ] Webpack 4 (Vue + SCSS).
 - [ ] Modelos con [Sequelizejs](http://docs.sequelizejs.com/).
