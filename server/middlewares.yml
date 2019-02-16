@@ -1,0 +1,3 @@
+- url: '*'
+  method: get
+  controller: all-get-endpoints.js

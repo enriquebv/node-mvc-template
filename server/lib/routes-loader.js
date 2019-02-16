@@ -9,6 +9,9 @@ const routesPath = path.resolve(__dirname, '..', 'routes.yml')
 const routesFile = fs.readFileSync(routesPath, 'utf8')
 const routes = yamlReader.safeLoad(routesFile)
 
+const notFoundControllerPath = path.join(controllersPath, '404.js')
+const notFoundControllerExists = fs.existsSync(notFoundControllerPath)
+
 module.exports = app => {
   routes.forEach(route => {
     const controllerPath = path.join(controllersPath, route.controller)
@@ -42,4 +45,9 @@ module.exports = app => {
         break
     }
   })
+
+  // When all routes are defined, set 404 not found controller
+  if (notFoundControllerExists) {
+    app.use(require(notFoundControllerPath))
+  }
 }
