@@ -27,7 +27,7 @@ Los **modulos** mas importantes utilizados son:
 
 ### Como crear una pagina:
 1. Añadir un ajuste a `./server/routes.yml`:
-  ```
+  ```yaml
   # Ejemplo de ajuste
   - url: /user # URL amigable
     method: get # HTTP Method
