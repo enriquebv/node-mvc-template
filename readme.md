@@ -8,6 +8,7 @@ Los **modulos** mas importantes utilizados son:
 
 **Funcionalidades**:
 - [x] Archivos de entorno `.env`.
+- [ ] Soporte para middlewares.
 - [ ] Motor de plantillas con [EJS](https://ejs.co/)
 - [ ] Webpack 4 (Vue + SCSS).
 - [ ] Modelos con [Sequelizejs](http://docs.sequelizejs.com/).
@@ -34,3 +35,11 @@ Los **modulos** mas importantes utilizados son:
     controller: /user/panel.js # Controller que ejecuta logica/renderiza contenido.
   ```
 
+2. Crear el controlador en `./server/controllers/`, con esta lógica básica:
+```js
+module.exports = (request, response) => {
+  const content = 'node-mvc-template'
+
+  response.status(200).send(content)
+}
+```
