@@ -8,6 +8,7 @@ Los **modulos** mas importantes utilizados son:
 
 **Funcionalidades**:
 - [x] Archivos de entorno `.env`.
+- [X] Soporte para rutas + controlador simple.
 - [ ] Soporte para middlewares.
 - [ ] Motor de plantillas con [EJS](https://ejs.co/)
 - [ ] Webpack 4 (Vue + SCSS).
@@ -27,12 +28,12 @@ Los **modulos** mas importantes utilizados son:
 6. Ejecutar `npm run dev` para ejecutar `webpack` en modo _watcher_.
 
 ### Como crear una pagina:
-1. Añadir un ajuste a `./server/routes.yml`:
+1. Añadir un endpoint a `./server/routes.yml`:
   ```yaml
-  # Ejemplo de ajuste
-  - url: /user # URL amigable
-    method: get # HTTP Method
-    controller: /user/panel.js # Controller que ejecuta logica/renderiza contenido.
+  # Ejemplo de endpoint
+  - url: /user                  # URL amigable del endpoint
+    method: get                 # Método HTTP por el que se accederá al controlador.
+    controller: /user/panel.js  # Controlador que ejecuta la lógica.
   ```
 
 2. Crear el controlador en `./server/controllers/`, con esta lógica básica:
@@ -43,3 +44,5 @@ module.exports = (request, response) => {
   response.status(200).send(content)
 }
 ```
+
+### Dentro de un controlador
